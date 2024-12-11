@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume - Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      .nav a {
+        float: left;
+        color: #f2f2f2;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .nav a:hover {
+        background-color: #575757;
+      }
+      .nav a.active {
+        background-color: #04aa6d;
+      }
+      .content {
+        border: 1px solid #aaa;
+        width: 500px;
+        padding: 20px 100px 20px 40px;
+        margin-left: 10px;
+        border-radius: 8px;
+      }
+      input[type='text'],
+      input[type='email'],
+      select,
+      textarea {
+        width: 100%;
+        padding-block: 6px;
+        border: 1px solid silver;
+      }
+      select {
+        width: 101%;
+      }
+      h1 {
+        padding: 10px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div>
+      <h1>Contact</h1>
+    </div>
+    <div class="content">
+      Enter Your Info <br />
+      <br />
+      <form action="/action_page.php">
+        <label for="Name">Your Name:</label><br />
+        <input type="text" id="name" name="name" value="" /><br /><br />
+        <label for="Email">Your E-Mail:</label><br />
+        <input type="email" id="email" name="email" value="" /><br /><br />
+        <label for="gender"> Gender: </label><br />
+        <select id="gender" name="gender" >
+            <option value="" disabled selected>select..</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <label for="Message">Message:</label> <br /> 
+        <textarea name="Message" rows="5px" cols="30px" id=""></textarea> <br />
+        <input type="Submit" value="Send" />
+        <input type="reset" value="Clear" />
+        </fieldset>
+       
+
+      </form>
+
+
+    </div>
+  </body>
+</html>

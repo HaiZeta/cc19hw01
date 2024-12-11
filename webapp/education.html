@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume - Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      .nav a {
+        float: left;
+        color: #f2f2f2;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .nav a:hover {
+        background-color: #575757;
+      }
+      .nav a.active {
+        background-color: #04aa6d;
+      }
+      .content {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="education.html" class="active">Education</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="content">
+      <h1>Education</h1>
+      <img src="pic/smarthat.png" alt="hat" />
+
+      <table border="1" cellspacing="0" cellpadding="5" width="100%">
+        <tr>
+          <th colspan="2">Year</th>
+          <th rowspan="2">School / University</th>
+        </tr>
+        <tr>
+          <th>From</th>
+          <th>To</th>
+        </tr>
+        <tr>
+          <td align="left">2019</td>
+          <td align="left">2022</td>
+          <td align="left" rowspan="1">ABC University</td>
+        </tr>
+        <tr>
+          <td align="left">2015</td>
+          <td align="left">2019</td>
+          <td align="left" rowspan="1">ABC High School</td>
+        </tr>
+        <tr>
+          <td align="left">2009</td>
+          <td align="left">2014</td>
+          <td align="left" rowspan="1">ABC Elementary School</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
